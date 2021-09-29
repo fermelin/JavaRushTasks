@@ -4,7 +4,6 @@ package com.javarush.task.task15.task1507;
 ООП - Перегрузка
 */
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 public class Solution {
     public static void main(String[] args) {
