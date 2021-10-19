@@ -21,7 +21,15 @@ public class Solution {
         if (!(o instanceof Solution))
             return false;
         Solution n = (Solution) o;
-        return Objects.equals(this.last, n.last);
+        if (first == n.first && last == n.last) return true;
+        if (first != null ? !first.equals(n.first) : n.first == null) return false;
+        if (last != null ? !last.equals(n.last) : n.last == null) return false;
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(first, last);
     }
 
     public static void main(String[] args) {
